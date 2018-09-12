@@ -1,0 +1,9 @@
+This folder contains 24 refined CatS crystallographic structures provided to D3R from Janssen and re-refined by D3R crystallographers, in addition to a CSV file containing mappings between ligand IDs and structure IDs:
+File CatS_ligandID_structureID.csv displays which ligand was crystallized with each srtucture ID. Structure files were aligned to the chain A of the gabj structure.
+
+For each of the 24 CatS crystallographic structures,
+CatS_crystal_structures/ contains all  24 re-refined CatS crystal structures
+ChainA/ contains unique files for each A chain from the 24 re-refined CatS crystal structures
+chainB/ contains unique files for each B chain from the 24 re-refined CatS crystal structures
+chainC/ contains unique files for each C chain from the 24 re-refined CatS crystal structures
+chainD/ contains unique files for each D chain from the 24 re-refined CatS crystal structures
