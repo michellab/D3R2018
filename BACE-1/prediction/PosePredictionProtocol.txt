@@ -1,0 +1,37 @@
+# Name for the protocol
+Name:Flare_docking
+#
+# All software packages used and their versions:
+Software:Flare 2.0.0 Revision 34140
+#
+# List of key parameters used for system preparation
+System Preparation Parameters: pH= 4.5
+#
+# Plain-text description of system preparation method
+System Preparation Method:
+Download 2P4J within Flare, delete all chains, ligands, and waters other than those of chain A. Align to 5YGX chain A. Use the protein prep wizard in Flare to clean the protein assign protonation states to amino acids and cap ends.
+#
+# List any number of key computational parameters in the following lines:
+Pose Prediction Parameters: Grid definition: 6A around ligand found in 2P4J including water molecules.
+Pose Prediction Parameters: Quality: normal
+Pose Prediction Parameters: Max Poses: 1
+Pose Prediction Parameters: Pool Size: 1.00
+Pose Prediction Parameters: Population Size: 1.00
+Pose Prediction Parameters: Minimize Ligands before Docking: Yes
+Pose Prediction Parameters: Rotate Amide Bonds: yes
+Pose Prediction Parameters: Rotate Ester Bonds: Yes
+Pose Prediction Parameters: Rotate Conjugated Bonds: Heuristically
+#
+# Provide free text description of your method below. Use as many lines as you need.
+Pose Prediction Method:
+Sequence aligned 2P4J to organisers reference structure. Extracted ligand from
+the crystal structure and defined a 6A binding site around the ligand. Waters and protein atoms in the 6A grid around the co-crystal of 2P4J were used as part of the docking grid.
+The protein was prepared using the protein prepare option of Flare, capping the terminal amino acids and protonate according to a pH of 4.5. Ligands were read in in smiles format.
+Using the docking button a docking calculations of all ligands were carried out with the following options: The quality was set to 'normal', only one pose was retained with a pool size of 1.00 and a population size of 1.00. Ligands were minimised before docking and amide and ester bonds were allowed to be rotated. The rotation of conjugated bond was done heuristically.
+#
+# Yes/No questions:
+# Question 1: Did you use visual inspection to select, eliminate and/or manually adjust your final predicted poses?
+# Question 2: Did you use publicly available co-crystal structures of this protein with similar ligands to guide your pose predictions?
+#
+Answer 1: no
+Answer 2: yes
