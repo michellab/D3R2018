@@ -1,0 +1,160 @@
+HEADER                                                                          
+TITLE     A BJY 901                                                             
+HETATM    1  C11 BJY A 901      -5.576   9.416  -7.282  1.00 42.58           C  
+HETATM    2  C14 BJY A 901      -3.444  11.630  -9.074  1.00 46.39           C  
+HETATM    3  C15 BJY A 901      -3.406  13.066  -8.549  1.00 50.92           C  
+HETATM    4  C10 BJY A 901      -7.955   9.465  -8.443  1.00 47.00           C  
+HETATM    5  C9  BJY A 901      -6.528   9.832  -8.237  1.00 43.10           C  
+HETATM    6  C1  BJY A 901     -10.920   9.601 -10.249  1.00 49.54           C  
+HETATM    7  C8  BJY A 901      -5.875  10.713  -9.038  1.00 43.96           C  
+HETATM    8  C7  BJY A 901      -6.494  11.421 -10.219  1.00 46.42           C  
+HETATM    9  C6  BJY A 901      -8.004  11.102 -10.273  1.00 48.01           C  
+HETATM   10  C16 BJY A 901      -3.505  13.160  -7.030  1.00 50.65           C  
+HETATM   11  C18 BJY A 901      -2.515  14.483  -5.128  1.00 55.43           C  
+HETATM   12  C19 BJY A 901      -3.555  15.145  -4.208  1.00 52.61           C  
+HETATM   13  C20 BJY A 901      -3.871  16.605  -4.622  1.00 51.80           C  
+HETATM   14  C21 BJY A 901      -3.352  16.858  -6.010  1.00 50.18           C  
+HETATM   15  C22 BJY A 901      -3.753  15.664  -6.879  1.00 52.31           C  
+HETATM   16  C23 BJY A 901      -3.465  17.643  -3.589  1.00 48.81           C  
+HETATM   17  C24 BJY A 901      -4.310  18.477  -2.905  1.00 48.25           C  
+HETATM   18  C25 BJY A 901      -2.262  18.981  -2.167  1.00 45.18           C  
+HETATM   19  C26 BJY A 901      -1.153  19.516  -1.517  1.00 45.69           C  
+HETATM   20  C27 BJY A 901       0.084  19.007  -1.841  1.00 49.38           C  
+HETATM   21  C30 BJY A 901      -0.878  17.476  -3.417  1.00 47.74           C  
+HETATM   22  C31 BJY A 901      -2.137  17.951  -3.127  1.00 45.36           C  
+HETATM   23  C32 BJY A 901      -5.736   8.473  -6.148  1.00 38.18           C  
+HETATM   24  C33 BJY A 901      -4.661   7.716  -5.684  1.00 39.69           C  
+HETATM   25  C34 BJY A 901      -4.825   6.848  -4.623  1.00 38.95           C  
+HETATM   26  C35 BJY A 901      -6.053   6.713  -3.989  1.00 35.65           C  
+HETATM   27  C36 BJY A 901      -7.126   7.469  -4.448  1.00 37.05           C  
+HETATM   28  C37 BJY A 901      -6.971   8.336  -5.512  1.00 35.97           C  
+HETATM   29  C38 BJY A 901      -6.211   5.777  -2.839  1.00 36.38           C  
+HETATM   30  F39 BJY A 901      -5.517   4.668  -2.974  1.00 34.75           F  
+HETATM   31  F40 BJY A 901      -5.749   6.252  -1.771  1.00 35.13           F  
+HETATM   32  F41 BJY A 901      -7.492   5.446  -2.599  1.00 35.43           F  
+HETATM   33  N12 BJY A 901      -4.398  10.017  -7.479  1.00 43.50           N  
+HETATM   34  N13 BJY A 901      -4.603  10.819  -8.575  1.00 45.87           N  
+HETATM   35  N17 BJY A 901      -2.960  14.454  -6.541  1.00 52.91           N1+
+HETATM   36  N28 BJY A 901       0.180  18.014  -2.770  1.00 51.33           N1+
+HETATM   37  N43 BJY A 901      -3.597  19.281  -2.053  1.00 47.19           N1+
+HETATM   38  N5  BJY A 901      -8.237   9.681  -9.834  1.00 50.00           N  
+HETATM   39  O29 BJY A 901       1.425  17.537  -3.066  1.00 55.56           O1-
+HETATM   40  O3  BJY A 901      -9.096   8.977 -12.014  1.00 49.30           O  
+HETATM   41  O4  BJY A 901      -9.378   7.524 -10.064  1.00 51.89           O  
+HETATM   42  O42 BJY A 901      -4.535  13.757  -9.083  1.00 61.14           O  
+HETATM   43  S2  BJY A 901      -9.376   8.840 -10.620  1.00 51.59           S  
+HETATM   44  H   BJY A 901     -11.079   9.577  -9.262  1.00  0.00           H  
+HETATM   45  H1  BJY A 901      -4.215  14.533  -9.627  1.00  0.00           H  
+HETATM   46  H2  BJY A 901      -3.488  11.662 -10.073  1.00  0.00           H  
+HETATM   47  H3  BJY A 901      -2.599  11.172  -8.800  1.00  0.00           H  
+HETATM   48  H4  BJY A 901      -8.104   8.506  -8.203  1.00  0.00           H  
+HETATM   49  H5  BJY A 901      -8.547  10.038  -7.876  1.00  0.00           H  
+HETATM   50  H6  BJY A 901     -10.909  10.553 -10.554  1.00  0.00           H  
+HETATM   51  H7  BJY A 901     -11.649   9.105 -10.720  1.00  0.00           H  
+HETATM   52  H8  BJY A 901      -6.362  12.408 -10.125  1.00  0.00           H  
+HETATM   53  H9  BJY A 901      -6.056  11.113 -11.063  1.00  0.00           H  
+HETATM   54  H10 BJY A 901      -8.499  11.725  -9.668  1.00  0.00           H  
+HETATM   55  H11 BJY A 901      -8.339  11.222 -11.208  1.00  0.00           H  
+HETATM   56  H12 BJY A 901      -4.464  13.082  -6.758  1.00  0.00           H  
+HETATM   57  H13 BJY A 901      -2.988  12.409  -6.619  1.00  0.00           H  
+HETATM   58  H14 BJY A 901      -1.657  14.994  -5.068  1.00  0.00           H  
+HETATM   59  H15 BJY A 901      -2.357  13.545  -4.819  1.00  0.00           H  
+HETATM   60  H16 BJY A 901      -4.399  14.610  -4.239  1.00  0.00           H  
+HETATM   61  H17 BJY A 901      -3.205  15.145  -3.271  1.00  0.00           H  
+HETATM   62  H18 BJY A 901      -3.750  17.699  -6.377  1.00  0.00           H  
+HETATM   63  H19 BJY A 901      -2.356  16.950  -5.993  1.00  0.00           H  
+HETATM   64  H20 BJY A 901      -4.724  15.469  -6.738  1.00  0.00           H  
+HETATM   65  H21 BJY A 901      -3.604  15.894  -7.841  1.00  0.00           H  
+HETATM   66  H22 BJY A 901      -5.304  18.497  -3.012  1.00  0.00           H  
+HETATM   67  H23 BJY A 901      -1.252  20.244  -0.839  1.00  0.00           H  
+HETATM   68  H24 BJY A 901       0.907  19.363  -1.398  1.00  0.00           H  
+HETATM   69  H25 BJY A 901      -0.749  16.749  -4.091  1.00  0.00           H  
+HETATM   70  H26 BJY A 901      -3.766   7.802  -6.122  1.00  0.00           H  
+HETATM   71  H27 BJY A 901      -4.046   6.307  -4.306  1.00  0.00           H  
+HETATM   72  H28 BJY A 901      -8.018   7.384  -4.004  1.00  0.00           H  
+HETATM   73  H29 BJY A 901      -7.753   8.872  -5.831  1.00  0.00           H  
+HETATM   74  H30 BJY A 901      -3.987  19.974  -1.446  1.00  0.00           H  
+HETATM   75  H31 BJY A 901      -2.529  13.458  -8.827  1.00  0.00           H  
+HETATM   76  H32 BJY A 901      -4.864  16.715  -4.651  1.00  0.00           H  
+HETATM   77  H33 BJY A 901      -2.127  14.504  -7.092  1.00  0.00           H  
+HETATM   78  H34 BJY A 901      -3.737  20.241  -2.294  1.00  0.00           H  
+CONECT    1    5   23   33                                                      
+CONECT    2    3   34   46   47                                                 
+CONECT    3    2   10   42   75                                                 
+CONECT    4    5   38   48   49                                                 
+CONECT    5    1    4    7                                                      
+CONECT    6   43   44   50   51                                                 
+CONECT    7    5    8   34                                                      
+CONECT    8    7    9   52   53                                                 
+CONECT    9    8   38   54   55                                                 
+CONECT   10    3   35   56   57                                                 
+CONECT   11   12   35   58   59                                                 
+CONECT   12   11   13   60   61                                                 
+CONECT   13   12   14   16   76                                                 
+CONECT   14   13   15   62   63                                                 
+CONECT   15   14   35   64   65                                                 
+CONECT   16   13   17   22                                                      
+CONECT   17   16   37   66                                                      
+CONECT   18   19   22   37                                                      
+CONECT   19   18   20   67                                                      
+CONECT   20   19   36   68                                                      
+CONECT   21   22   36   69                                                      
+CONECT   22   16   18   21                                                      
+CONECT   23    1   24   28                                                      
+CONECT   24   23   25   70                                                      
+CONECT   25   24   26   71                                                      
+CONECT   26   25   27   29                                                      
+CONECT   27   26   28   72                                                      
+CONECT   28   23   27   73                                                      
+CONECT   29   26   30   31   32                                                 
+CONECT   30   29                                                                
+CONECT   31   29                                                                
+CONECT   32   29                                                                
+CONECT   33    1   34                                                           
+CONECT   34    2    7   33                                                      
+CONECT   35   10   11   15   77                                                 
+CONECT   36   20   21   39                                                      
+CONECT   37   17   18   74   78                                                 
+CONECT   38    4    9   43                                                      
+CONECT   39   36                                                                
+CONECT   40   43                                                                
+CONECT   41   43                                                                
+CONECT   42    3   45                                                           
+CONECT   43    6   38   40   41                                                 
+CONECT   44    6                                                                
+CONECT   45   42                                                                
+CONECT   46    2                                                                
+CONECT   47    2                                                                
+CONECT   48    4                                                                
+CONECT   49    4                                                                
+CONECT   50    6                                                                
+CONECT   51    6                                                                
+CONECT   52    8                                                                
+CONECT   53    8                                                                
+CONECT   54    9                                                                
+CONECT   55    9                                                                
+CONECT   56   10                                                                
+CONECT   57   10                                                                
+CONECT   58   11                                                                
+CONECT   59   11                                                                
+CONECT   60   12                                                                
+CONECT   61   12                                                                
+CONECT   62   14                                                                
+CONECT   63   14                                                                
+CONECT   64   15                                                                
+CONECT   65   15                                                                
+CONECT   66   17                                                                
+CONECT   67   19                                                                
+CONECT   68   20                                                                
+CONECT   69   21                                                                
+CONECT   70   24                                                                
+CONECT   71   25                                                                
+CONECT   72   27                                                                
+CONECT   73   28                                                                
+CONECT   74   37                                                                
+CONECT   75    3                                                                
+CONECT   76   13                                                                
+CONECT   77   35                                                                
+CONECT   78   37                                                                
+MASTER        0    0    0    0    0    0    0    0   78    0   78    0          
+END                                                                             
