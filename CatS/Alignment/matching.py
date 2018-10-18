@@ -34,3 +34,13 @@ f.close()
 #for i in range(len(best_match_list)):
 #    f.write('%d, %s, %s\n' %(best_match_list[i],match_pair_list[i][0], match_pair_list[i][1]))
 #f.close()
+
+f = open('matching_missing.dat')
+lines = f.readlines()
+f.close()
+
+for line in lines:
+    a = line.strip().split(', ')
+    out_name = a[1].split('/')[-1].split('.pdb')[0]+'_aligned.pdb'
+    command = '/home/ppxasjsm/source_builds/kcombu/fkcombu -T %s -R %s -opdbT %s' %(a[1],a[2],out_name)
+    os.system(command)
