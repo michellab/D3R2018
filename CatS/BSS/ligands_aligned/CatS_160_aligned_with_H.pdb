@@ -1,0 +1,217 @@
+REMARK name_of_molecule '../CatS_prep/ligands/CatS_160_aligned_with_H.pdb'
+REMARK output_filename 'CatS_160_aligned_with_H.pdb'
+REMARK Natom   98 Nbond  204
+REMARK COMMAND "/home/ppxasjsm/source_builds/kcombu/fkcombu -T ../CatS_prep/ligands/CatS_160_aligned_with_H.pdb -R ../CatS_prep/GC3_data/ligands/mekm.pdb -P ../BSS/protein/protein.pdb -opdbT CatS_160_aligned_with_H.pdb"
+REMARK DATE_START    Oct 24,2018 15:53:45
+REMARK DATE_END      Oct 24,2018 15:53:52
+REMARK LAST_MOD_DATE 2016/11/14
+REMARK COMP_TIME  7.110516 seconds
+REMARK HOSTNAME   NOT_REGISTERED
+REMARK WEatommatch 1.000000
+REMARK WEvolmovlap 0.000000
+REMARK WEprotcrash 1.000000
+REMARK WEprotatrct 0.000000
+REMARK WEselfcrash 1.000000
+REMARK WEtpdisrest 0.000000
+REMARK COMMENT: [rank 1] ninit 0 mcs C-1K Nmatch 42 tani 0.7500 Etotal +3.62 Eam
+REMARK COMMENT: +2.75 Esc +0.35 Epc +0.52 Epa -390.74 Evo -1839.22 Etp +0.00
+REMARK COMMENT: rmsd_match 0.526 tani_vol 0.8726 rmsd_rank1 0.000
+MODEL        1
+HETATM    1  C   MOL A   1       1.626  17.330  -4.328  0.00  0.00           C
+HETATM    2  C   MOL A   1       0.449  17.577  -5.293  0.00  0.00           C
+HETATM    3  C   MOL A   1       1.036  18.397  -6.463  0.00  0.00           C
+HETATM    4  C   MOL A   1      -0.569  18.459  -4.541  0.00  0.00           C
+HETATM    5  C   MOL A   1      -0.148  16.224  -5.803  0.00  1.00           C
+HETATM    6  C   MOL A   1      -1.177  15.599  -4.877  0.00  6.00           C
+HETATM    7  C   MOL A   1      -1.608  14.244  -5.419  0.00  5.00           C
+HETATM    8  N   MOL A   1      -2.177  14.358  -6.766  0.00  4.00           N
+HETATM    9  C   MOL A   1      -1.186  14.946  -7.692  0.00  3.00           C
+HETATM   10  C   MOL A   1      -0.705  16.316  -7.218  0.00  2.00           C
+HETATM   11  C   MOL A   1      -2.757  13.071  -7.297  0.00  7.00           C
+HETATM   12  C   MOL A   1      -3.312  13.085  -8.741  0.00  8.00           C
+HETATM   13  C   MOL A   1      -3.364  11.607  -9.178  0.00  9.00           C
+HETATM   14  N   MOL A   1      -4.294  10.550  -8.752  0.00 10.00           N
+HETATM   15  C   MOL A   1      -5.523  10.269  -9.246  0.00 11.00           C
+HETATM   16  C   MOL A   1      -6.188   9.375  -8.514  0.00 12.00           C
+HETATM   17  C   MOL A   1      -5.296   9.090  -7.450  0.00 13.00           C
+HETATM   18  N   MOL A   1      -4.195   9.793  -7.631  0.00 14.00           N
+HETATM   19  C   MOL A   1      -5.527   8.233  -6.296  0.00 15.00           C
+HETATM   20  C   MOL A   1      -4.492   7.471  -5.789  0.00 16.00           C
+HETATM   21  C   MOL A   1      -4.677   6.691  -4.672  0.00 17.00           C
+HETATM   22  C   MOL A   1      -5.889   6.640  -4.012  0.00 18.00           C
+HETATM   23  C   MOL A   1      -6.940   7.391  -4.526  0.00 19.00           C
+HETATM   24  C   MOL A   1      -6.752   8.163  -5.653  0.00 20.00           C
+HETATM   25  S   MOL A   1      -8.578   7.490  -3.773  0.00 21.00           S
+HETATM   26  C   MOL A   1      -9.216   9.128  -3.307  0.00 22.00           C
+HETATM   27  C   MOL A   1      -8.068  10.000  -2.754  0.00 23.00           C
+HETATM   28  N   MOL A   1      -8.517  11.124  -1.851  0.00 24.00           N
+HETATM   29  C   MOL A   1      -9.914  11.545  -1.972  0.00 25.00           C
+HETATM   30  C   MOL A   1     -10.282  12.519  -0.857  0.00 26.00           C
+HETATM   31  C   MOL A   1      -9.380  13.744  -0.848  0.00 27.00           C
+HETATM   32  C   MOL A   1      -7.927  13.305  -0.873  0.00 28.00           C
+HETATM   33  C   MOL A   1      -7.654  12.297  -1.982  0.00 29.00           C
+HETATM   34  F   MOL A   1      -7.580  12.755   0.357  0.00  0.00           F
+HETATM   35  F   MOL A   1      -7.123  14.426  -1.051  0.00  0.00           F
+HETATM   36  C   MOL A   1      -5.915   5.764  -2.761  0.00 30.00           C
+HETATM   37  F   MOL A   1      -4.910   4.805  -2.787  0.00 31.00           F
+HETATM   38  F   MOL A   1      -7.136   5.108  -2.651  0.00 32.00           F
+HETATM   39  F   MOL A   1      -5.742   6.473  -1.577  0.00 33.00           F
+HETATM   40  C   MOL A   1      -7.604   8.934  -8.876  0.00 34.00           C
+HETATM   41  N   MOL A   1      -8.085   9.385 -10.208  0.00 35.00           N
+HETATM   42  C   MOL A   1      -7.666  10.786 -10.425  0.00 36.00           C
+HETATM   43  C   MOL A   1      -6.130  10.912 -10.476  0.00 37.00           C
+HETATM   44  S   MOL A   1      -9.644   9.076 -10.559  0.00 38.00           S
+HETATM   45  O   MOL A   1      -9.849   9.432 -11.923  0.00 40.00           O
+HETATM   46  O   MOL A   1      -9.908   7.723 -10.192  0.00 39.00           O
+HETATM   47  C   MOL A   1     -10.676  10.141  -9.518  0.00 41.00           C
+HETATM   48  O   MOL A   1      -4.622  13.670  -8.782  0.00 42.00           O
+HETATM   49  H   MOL A   1      -2.738  13.634  -9.349  0.00  0.00           H
+HETATM   50  H   MOL A   1       1.756  16.345  -4.218  0.00  0.00           H
+HETATM   51  H   MOL A   1       2.459  17.740  -4.699  0.00  0.00           H
+HETATM   52  H   MOL A   1       1.426  17.744  -3.440  0.00  0.00           H
+HETATM   53  H   MOL A   1       1.282  17.774  -7.206  0.00  0.00           H
+HETATM   54  H   MOL A   1       0.357  19.056  -6.787  0.00  0.00           H
+HETATM   55  H   MOL A   1       1.848  18.892  -6.154  0.00  0.00           H
+HETATM   56  H   MOL A   1      -1.487  18.080  -4.671  0.00  0.00           H
+HETATM   57  H   MOL A   1      -0.346  18.476  -3.567  0.00  0.00           H
+HETATM   58  H   MOL A   1      -0.536  19.392  -4.899  0.00  0.00           H
+HETATM   59  H   MOL A   1       0.645  15.616  -5.805  0.00  0.00           H
+HETATM   60  H   MOL A   1      -1.969  16.206  -4.810  0.00  0.00           H
+HETATM   61  H   MOL A   1      -0.755  15.471  -3.979  0.00  0.00           H
+HETATM   62  H   MOL A   1      -2.290  13.856  -4.801  0.00  0.00           H
+HETATM   63  H   MOL A   1      -0.788  13.676  -5.480  0.00  0.00           H
+HETATM   64  H   MOL A   1      -2.867  14.952  -6.715  0.00  0.00           H
+HETATM   65  H   MOL A   1      -1.607  15.037  -8.595  0.00  0.00           H
+HETATM   66  H   MOL A   1      -0.395  14.333  -7.710  0.00  0.00           H
+HETATM   67  H   MOL A   1      -1.477  16.951  -7.245  0.00  0.00           H
+HETATM   68  H   MOL A   1       0.034  16.595  -7.832  0.00  0.00           H
+HETATM   69  H   MOL A   1      -3.503  12.803  -6.688  0.00  0.00           H
+HETATM   70  H   MOL A   1      -1.986  12.435  -7.326  0.00  0.00           H
+HETATM   71  H   MOL A   1      -2.457  11.248  -8.954  0.00  0.00           H
+HETATM   72  H   MOL A   1      -3.719  11.744 -10.102  0.00  0.00           H
+HETATM   73  H   MOL A   1      -3.599   7.487  -6.239  0.00  0.00           H
+HETATM   74  H   MOL A   1      -3.911   6.149  -4.328  0.00  0.00           H
+HETATM   75  H   MOL A   1      -7.522   8.689  -6.016  0.00  0.00           H
+HETATM   76  H   MOL A   1      -9.922   9.023  -2.608  0.00  0.00           H
+HETATM   77  H   MOL A   1      -9.606   9.571  -4.115  0.00  0.00           H
+HETATM   78  H   MOL A   1      -7.574  10.397  -3.528  0.00  0.00           H
+HETATM   79  H   MOL A   1      -7.496   9.399  -2.197  0.00  0.00           H
+HETATM   80  H   MOL A   1      -8.410  10.820  -0.999  0.00  0.00           H
+HETATM   81  H   MOL A   1     -10.506  10.740  -1.919  0.00  0.00           H
+HETATM   82  H   MOL A   1     -10.032  12.008  -2.851  0.00  0.00           H
+HETATM   83  H   MOL A   1     -10.201  12.046   0.020  0.00  0.00           H
+HETATM   84  H   MOL A   1     -11.218  12.828  -1.024  0.00  0.00           H
+HETATM   85  H   MOL A   1      -9.562  14.278  -0.021  0.00  0.00           H
+HETATM   86  H   MOL A   1      -9.574  14.290  -1.662  0.00  0.00           H
+HETATM   87  H   MOL A   1      -6.696  12.016  -1.930  0.00  0.00           H
+HETATM   88  H   MOL A   1      -7.862  12.743  -2.850  0.00  0.00           H
+HETATM   89  H   MOL A   1      -8.227   9.290  -8.181  0.00  0.00           H
+HETATM   90  H   MOL A   1      -7.582   7.935  -8.914  0.00  0.00           H
+HETATM   91  H   MOL A   1      -8.017  11.352  -9.678  0.00  0.00           H
+HETATM   92  H   MOL A   1      -8.037  11.093 -11.302  0.00  0.00           H
+HETATM   93  H   MOL A   1      -5.875  11.879 -10.510  0.00  0.00           H
+HETATM   94  H   MOL A   1      -5.787  10.448 -11.293  0.00  0.00           H
+HETATM   95  H   MOL A   1     -11.219   9.568  -8.903  0.00  0.00           H
+HETATM   96  H   MOL A   1     -10.096  10.754  -8.982  0.00  0.00           H
+HETATM   97  H   MOL A   1     -11.284  10.687 -10.093  0.00  0.00           H
+HETATM   98  H   MOL A   1      -5.170  13.291  -9.537  0.00  0.00           H
+CONECT    1    2   50   51   52
+CONECT    2    1    3    4    5
+CONECT    3    2   53   54   55
+CONECT    4    2   56   57   58
+CONECT    5    2    6   10   59
+CONECT    6    5    7   60   61
+CONECT    7    6    8   62   63
+CONECT    8    7    9   11   64
+CONECT    9    8   10   65   66
+CONECT   10    5    9   67   68
+CONECT   11    8   12   69   70
+CONECT   12   11   13   48   49
+CONECT   13   12   14   71   72
+CONECT   14   13   15   18
+CONECT   15   14   16   43
+CONECT   16   15   17   40
+CONECT   17   16   18   19
+CONECT   18   14   17
+CONECT   19   17   20   24
+CONECT   20   19   21   73
+CONECT   21   20   22   74
+CONECT   22   21   23   36
+CONECT   23   22   24   25
+CONECT   24   19   23   75
+CONECT   25   23   26
+CONECT   26   25   27   76   77
+CONECT   27   26   28   78   79
+CONECT   28   27   29   33   80
+CONECT   29   28   30   81   82
+CONECT   30   29   31   83   84
+CONECT   31   30   32   85   86
+CONECT   32   31   33   34   35
+CONECT   33   28   32   87   88
+CONECT   34   32
+CONECT   35   32
+CONECT   36   22   37   38   39
+CONECT   37   36
+CONECT   38   36
+CONECT   39   36
+CONECT   40   16   41   89   90
+CONECT   41   40   42   44
+CONECT   42   41   43   91   92
+CONECT   43   15   42   93   94
+CONECT   44   41   45   46   47
+CONECT   45   44
+CONECT   46   44
+CONECT   47   44   95   96   97
+CONECT   48   12   98
+CONECT   49   12
+CONECT   50    1
+CONECT   51    1
+CONECT   52    1
+CONECT   53    3
+CONECT   54    3
+CONECT   55    3
+CONECT   56    4
+CONECT   57    4
+CONECT   58    4
+CONECT   59    5
+CONECT   60    6
+CONECT   61    6
+CONECT   62    7
+CONECT   63    7
+CONECT   64    8
+CONECT   65    9
+CONECT   66    9
+CONECT   67   10
+CONECT   68   10
+CONECT   69   11
+CONECT   70   11
+CONECT   71   13
+CONECT   72   13
+CONECT   73   20
+CONECT   74   21
+CONECT   75   24
+CONECT   76   26
+CONECT   77   26
+CONECT   78   27
+CONECT   79   27
+CONECT   80   28
+CONECT   81   29
+CONECT   82   29
+CONECT   83   30
+CONECT   84   30
+CONECT   85   31
+CONECT   86   31
+CONECT   87   33
+CONECT   88   33
+CONECT   89   40
+CONECT   90   40
+CONECT   91   42
+CONECT   92   42
+CONECT   93   43
+CONECT   94   43
+CONECT   95   47
+CONECT   96   47
+CONECT   97   47
+CONECT   98   48
+TER
+ENDMDL
