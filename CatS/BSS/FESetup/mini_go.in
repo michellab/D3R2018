@@ -1,0 +1,23 @@
+FE_type = Sire
+AFE.separate_vdw_elec = False
+mcs.match_by = spatially-closest
+
+[globals]
+forcefield = amber, ff14SB, tip3p
+gaff = gaff2
+logfile = dGmorph.log
+
+[ligand]
+basedir = poses
+file.name = ligand.pdb
+box.type = rectangular
+
+morph_pairs = CatS_178 > CatS_29, CatS_29 > CatS_178, CatS_178 > CatS_191, CatS_191 > CatS_178, CatS_191 > CatS_30, CatS_30 > CatS_191, CatS_30 > CatS_29, CatS_29 > CatS_30, CatS_155 > CatS_30, CatS_30 > CatS_155, CatS_155 > CatS_153, CatS_153 > CatS_155, CatS_153 > CatS_157, CatS_157 > CatS_153, CatS_157 > CatS_155, CatS_155 > CatS_157
+ 
+[protein]
+basedir = protein
+file.name = protein.pdb
+molecules = cats 
+
+[complex]
+box.type = rectangular

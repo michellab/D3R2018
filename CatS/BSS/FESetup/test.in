@@ -1,0 +1,20 @@
+FE_type = Sire
+AFE.separate_vdw_elec = False
+[globals]
+forcefield = amber, ff14SB, tip3p
+gaff = gaff2
+logfile = dGmorph.log
+[ligand]
+basedir = poses
+file.name = ligand.pdb
+box.type = rectangular
+
+morph_pairs = CatS_29 > CatS_30
+ 
+[protein]
+basedir = protein
+file.name = protein.pdb
+molecules = cats 
+
+[complex]
+box.type = rectangular
