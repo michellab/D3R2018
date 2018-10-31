@@ -1,0 +1,54 @@
+Remark line goes here
+MASS
+zz 1.000         0.000               ATTN, no polarizability parameter
+du 1.000         0.000               ATTN, no polarizability parameter
+
+BOND
+c3-zz    0.00   0.000       ATTN, need revision
+c3-nx  222.58   1.511       same as c3-n4, penalty score=  0.0
+hn-nx  482.87   1.030       same as hn-n4, penalty score=  0.0
+du-zz    0.00   0.000       ATTN, need revision
+du-du    0.00   0.000       ATTN, need revision
+
+ANGLE
+c3-zz-du    0.000       0.000   ATTN, need revision
+c3-c3-zz    0.000       0.000   ATTN, need revision
+c3-c3-nx   80.976     114.210   same as c3-c3-n4, penalty score=  0.0
+c3-nx-c3   64.460     109.660   same as c3-n4-c3, penalty score=  0.0
+c3-nx-hn   46.193     110.110   same as c3-n4-hn, penalty score=  0.0
+hx-c3-nx   60.076     108.010   same as hx-c3-n4, penalty score=  0.0
+hc-c3-zz    0.000       0.000   ATTN, need revision
+du-du-zz    0.000       0.000   ATTN, need revision
+du-zz-du    0.000       0.000   ATTN, need revision
+du-du-du    0.000       0.000   ATTN, need revision
+
+DIHE
+du-du-zz-c3   1    0.000         0.000           0.000      ATTN, need revision
+c3-c3-zz-du   1    0.000         0.000           0.000      ATTN, need revision
+c3-c3-c3-nx   1    0.210         0.000           3.000      same as n4-c3-c3-c3, penalty score=  0.0
+c3-c3-nx-c3   1    0.156         0.000           3.000      same as c3-c3-n4-c3, penalty score=  0.0
+c3-c3-nx-hn   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+hx-c3-nx-c3   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+nx-c3-c3-oh   1    0.144         0.000          -3.000      same as oh-c3-c3-n4
+nx-c3-c3-oh   1    1.300         0.000           2.000      same as oh-c3-c3-n4, penalty score=  0.0
+ca-ca-cd-cd   1    0.505       180.000           2.000      same as c2-ce-ca-ca, penalty score=229.0
+ca-ca-cd-nc   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=232.0
+hc-c3-zz-du   1    0.000         0.000           0.000      ATTN, need revision
+hx-c3-nx-hn   1    0.109         0.000           3.000      same as hn-n4-c3-hx, penalty score=  0.0
+du-du-zz-du   1    0.000         0.000           0.000      ATTN, need revision
+
+IMPROPER
+c3-cc-na-nc         1.1          180.0         2.0          Using the default value
+c3-cd-cc-na         1.1          180.0         2.0          Using the default value
+c3-cc-cd-cd         1.1          180.0         2.0          Using the default value
+ca-cd-cd-nc         1.1          180.0         2.0          Using the default value
+ca-ca-ca-cd         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-ss         1.1          180.0         2.0          Using the default value
+
+NONBON
+  zz          0.0000  0.0000             ATTN, need revision
+  du          0.0000  0.0000             ATTN, need revision
+
+
+
