@@ -1,5 +1,11 @@
 import BioSimSpace as BSS
 
+import sys
+
+# Extract the ligand numbers.
+num0 = sys.argv[1]
+num1 = sys.argv[2]
+
 # Load the protein and crystal waters.
 protein_water = BSS.IO.readMolecules("protein/protein_water.pdb")
 
@@ -10,8 +16,8 @@ waters = protein_water.getWaterMolecules()
 protein = BSS.Parameters.ff14SB(protein_water.getMolecules()[0]).getMolecule()
 
 # Load the parameterised ligands.
-lig0 = BSS.IO.readMolecules(BSS.IO.glob("ligands_aligned/parametrised/CatS_155.*")).getMolecules()[0]
-lig1 = BSS.IO.readMolecules(BSS.IO.glob("ligands_aligned/parametrised/CatS_157.*")).getMolecules()[0]
+lig0 = BSS.IO.readMolecules(BSS.IO.glob("ligands_aligned/parametrised/CatS_%s.*" % num0)).getMolecules()[0]
+lig1 = BSS.IO.readMolecules(BSS.IO.glob("ligands_aligned/parametrised/CatS_%s.*" % num1)).getMolecules()[0]
 
 # Find the best mapping of atoms between the ligands.
 mapping = BSS.Align.matchAtoms(lig0, lig1)
@@ -31,7 +37,7 @@ solvated = BSS.Solvent.tip3p(molecule=system, box=3*[60*BSS.Units.Length.angstro
 # Initialise the binding free energy object.
 freenrg = BSS.FreeEnergy.Binding(solvated,
                                  BSS.Protocol.FreeEnergy(),
-                                 work_dir="CatS_155_157")
+                                 work_dir="CatS_%s_%s" % (num0, num1))
 
 # Run the simulation.
-#freenrg.run()
+freenrg.run()
