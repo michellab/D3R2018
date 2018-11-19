@@ -1,0 +1,23 @@
+#!/bin/bash -login
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=14
+#SBATCH --job-name=NAME
+#SBATCH --time=20:00:00
+#SBATCH --mem=40G
+
+# Disable Sire analytics.
+export SIRE_DONT_PHONEHOME=1
+export SIRE_SILENT_PHONEHOME=1
+
+# Set path to local AmberTools installation.
+export AMBERHOME=/mnt/shared/software/amber18
+
+# Source the GROMACS shell rc.
+source /mnt/shared/software/gromacs/bin/GMXRC
+
+# Set the OpenMM plugin directory.
+export OPENMM_PLUGIN_DIR=/mnt/shared/software/sire.app/lib/plugins
+
+# Run the script using the BioSimSpace python interpreter.
+cd $SLURM_SUBMIT_DIR
+time /mnt/shared/software/sire.app/bin/python binding_freenrg.py LIG0 LIG1
