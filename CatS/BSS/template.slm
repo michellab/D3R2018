@@ -26,7 +26,11 @@ source /mnt/shared/software/gromacs/bin/GMXRC
 # Set the OpenMM plugin directory.
 export OPENMM_PLUGIN_DIR=/mnt/shared/software/sire.app/lib/plugins
 
-cd $SLURM_SUBMIT_DIR
+# Make a unique directory for this job and move to it.
+mkdir $SLURM_SUBMIT_DIR/$SLURM_JOB_ID
+cd $SLURM_SUBMIT_DIR/$SLURM_JOB_ID
+
+export JOB_DIR=$SLURM_SUBMIT_DIR
 
 # Run the script using the BioSimSpace python interpreter.
 
@@ -34,11 +38,11 @@ cd $SLURM_SUBMIT_DIR
 export CUDA_VISIBLE_DEVICES=0,1
 
 # Forward.
-time /mnt/shared/software/sire.app/bin/python binding_freenrg.py LIG0 LIG1 &
+time /mnt/shared/software/sire.app/bin/python $JOB_DIR/binding_freenrg.py LIG0 LIG1 &
 
 # Make sure GPU ID 1 is first.
 export CUDA_VISIBLE_DEVICES=1,0
 
 # Backwards.
-time /mnt/shared/software/sire.app/bin/python binding_freenrg.py LIG1 LIG0
+time /mnt/shared/software/sire.app/bin/python $JOB_DIR/binding_freenrg.py LIG1 LIG0
 wait

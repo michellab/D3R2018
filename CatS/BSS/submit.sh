@@ -22,4 +22,7 @@ do
     # Submit the job.
     sbatch submit.slm
 
+    # Remove the redundant batch script.
+    rm submit.slm
+
 done < ligand_pairs.txt

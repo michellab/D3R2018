@@ -1,13 +1,24 @@
 import BioSimSpace as BSS
 
+import os
 import sys
+
+# Extract the directory for the job.
+try:
+    job_dir = os.getenv("JOB_DIR")
+except:
+    job_dir = None
+
+# No job directory set, use the current directory.
+if job_dir is None:
+    job_dir = "."
 
 # Extract the ligand numbers.
 num0 = sys.argv[1]
 num1 = sys.argv[2]
 
 # Load the protein and crystal waters.
-protein_water = BSS.IO.readMolecules("protein/protein_water.pdb")
+protein_water = BSS.IO.readMolecules("%s/protein/protein_water.pdb" % job_dir)
 
 # Extract the waters.
 waters = protein_water.getWaterMolecules()
@@ -16,8 +27,8 @@ waters = protein_water.getWaterMolecules()
 protein = BSS.Parameters.ff14SB(protein_water.getMolecules()[0]).getMolecule()
 
 # Load the parameterised ligands.
-lig0 = BSS.IO.readMolecules(BSS.IO.glob("ligands_aligned/parametrised/CatS_%s.*" % num0)).getMolecules()[0]
-lig1 = BSS.IO.readMolecules(BSS.IO.glob("ligands_aligned/parametrised/CatS_%s.*" % num1)).getMolecules()[0]
+lig0 = BSS.IO.readMolecules(BSS.IO.glob("%s/ligands_aligned/parametrised/CatS_%s.*" % (job_dir, num0))).getMolecules()[0]
+lig1 = BSS.IO.readMolecules(BSS.IO.glob("%s/ligands_aligned/parametrised/CatS_%s.*" % (job_dir, num1))).getMolecules()[0]
 
 # Find the best mapping of atoms between the ligands.
 mapping = BSS.Align.matchAtoms(lig0, lig1)
