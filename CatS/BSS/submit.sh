@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ ! -f "$1" ];
+then
+    echo "Missing ligand pair file!"
+fi
+
 # Loop over all ligand pairs.
 while read pair;
 do
@@ -25,4 +30,4 @@ do
     # Remove the redundant batch script.
     rm submit.slm
 
-done < ligand_pairs.txt
+done < $1
