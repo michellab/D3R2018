@@ -3,6 +3,7 @@
 if [ ! -f "$1" ];
 then
     echo "Missing ligand pair file!"
+    exit 1
 fi
 
 # Loop over all ligand pairs.
