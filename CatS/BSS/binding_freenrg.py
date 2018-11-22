@@ -52,6 +52,3 @@ freenrg = BSS.FreeEnergy.Binding(solvated,
 
 # Run the simulation.
 freenrg.run()
-
-# Analyse the data.
-pmf_bound, pmf_free = freenrg.analyse()
