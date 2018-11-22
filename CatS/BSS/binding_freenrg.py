@@ -36,7 +36,7 @@ mapping = BSS.Align.matchAtoms(lig0, lig1)
 # Align lig0 to lig1 based on the mapping.
 lig0 = BSS.Align.rmsdAlign(lig0, lig1, mapping)
 
-# Merged the two ligands based on the mapping.
+# Merge the two ligands based on the mapping.
 merged = BSS.Align.merge(lig0, lig1, mapping)
 
 # Create the composite system.
