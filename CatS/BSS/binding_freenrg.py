@@ -37,15 +37,15 @@ lig1 = BSS.IO.readMolecules(BSS.IO.glob("%s/ligands_aligned/parametrised/CatS_%s
 mapping = {}
 
 # Forward mapping.
-if os.path.isfile("%s/FESetup_merge_errors/%s_%s.txt" % (job_dir, num0, num1)):
-    with open("%s/FESetup_merge_errors/%s_%s.txt" % (job_dir, num0, num1), "r") as file:
+if os.path.isfile("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num0, num1)):
+    with open("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num0, num1), "r") as file:
         for line in file:
             data = line.rstrip().split()
             mapping[AtomIdx(int(data[0]))] = AtomIdx(int(data[1]))
 
 # Reverse mapping.
-elif os.path.isfile("%s/FESetup_merge_errors/%s_%s.txt" % (job_dir, num1, num0)):
-    with open("%s/FESetup_merge_errors/%s_%s.txt" % (job_dir, num1, num0), "r") as file:
+elif os.path.isfile("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num1, num0)):
+    with open("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num1, num0), "r") as file:
         for line in file:
             data = line.rstrip().split()
             # Invert the indices.
