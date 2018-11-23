@@ -1,5 +1,7 @@
 import BioSimSpace as BSS
 
+from Sire.Mol import AtomIdx
+
 import os
 import sys
 
@@ -30,8 +32,29 @@ protein = BSS.Parameters.ff14SB(protein_water.getMolecules()[0]).getMolecule()
 lig0 = BSS.IO.readMolecules(BSS.IO.glob("%s/ligands_aligned/parametrised/CatS_%s.*" % (job_dir, num0))).getMolecules()[0]
 lig1 = BSS.IO.readMolecules(BSS.IO.glob("%s/ligands_aligned/parametrised/CatS_%s.*" % (job_dir, num1))).getMolecules()[0]
 
-# Find the best mapping of atoms between the ligands.
-mapping = BSS.Align.matchAtoms(lig0, lig1)
+# If a mapping file exists, then load the mapping. Otherwise, use BioSimSpace
+# to create the mapping.
+mapping = {}
+
+# Forward mapping.
+if os.path.isfile("FESetup_merge_errors/%s_%s.txt" % (num0, num1)):
+    with open("FESetup_merge_errors/%s_%s.txt" % (num0, num1), "r") as file:
+        for line in file:
+            data = line.rstrip().split()
+            mapping[AtomIdx(int(data[0]))] = AtomIdx(int(data[1]))
+
+# Reverse mapping.
+elif os.path.isfile("FESetup_merge_errors/%s_%s.txt" % (num1, num0)):
+    with open("FESetup_merge_errors/%s_%s.txt" % (num0, num1), "r") as file:
+        for line in file:
+            data = line.rstrip().split()
+            # Invert the indices.
+            mapping[AtomIdx(int(data[1]))] = AtomIdx(int(data[0]))
+
+# No mapping, generate it ourselves.
+else:
+    # Find the best mapping of atoms between the ligands.
+    mapping = BSS.Align.matchAtoms(lig0, lig1)
 
 # Align lig0 to lig1 based on the mapping.
 lig0 = BSS.Align.rmsdAlign(lig0, lig1, mapping)
@@ -45,10 +68,11 @@ system = merged + protein + waters
 # Solvate in a 60 angstrom box of TIP3P water.
 solvated = BSS.Solvent.tip3p(molecule=system, box=3*[60*BSS.Units.Length.angstrom])
 
+# Create the free energy protocol.
+protocol = BSS.Protocol.FreeEnergy(runtime=4*BSS.Units.Time.nanosecond, num_lam=17)
+
 # Initialise the binding free energy object.
-freenrg = BSS.FreeEnergy.Binding(solvated,
-                                 BSS.Protocol.FreeEnergy(),
-                                 work_dir="CatS_%s_%s" % (num0, num1))
+freenrg = BSS.FreeEnergy.Binding(solvated, protocol, work_dir="CatS_%s_%s" % (num0, num1))
 
 # Run the simulation.
 freenrg.run()
