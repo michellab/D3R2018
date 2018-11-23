@@ -5,7 +5,7 @@ export SIRE_DONT_PHONEHOME=1
 export SIRE_SILENT_PHONEHOME=1
 
 # Create the name of the analysis command.
-cmd="/mnt/shared/software/sire.app/bin/analyse_freenrg mbar -i "
+cmd="/mnt/shared/software/sire.app/bin/analyse_freenrg mbar --subsampling --overlap -i "
 
 # Remove old free energy data.
 if [ -f free_energies.txt ];
@@ -37,7 +37,7 @@ do
 
         if [ -f "$filename" ];
         then
-            step=$(tail -n 1 $dir/free/lambda_1.0/gradients.dat | awk '{printf "%d", $1}')
+            step=$(tail -n 1 $filename | awk '{printf "%d", $1}')
         else
             step=0
         fi
