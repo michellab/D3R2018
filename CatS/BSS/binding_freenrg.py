@@ -40,16 +40,16 @@ mapping = {}
 if os.path.isfile("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num0, num1)):
     with open("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num0, num1), "r") as file:
         for line in file:
-            data = line.strip().split()
-            mapping[AtomIdx(int(data[0]))] = AtomIdx(int(data[1]))
+            pair = line.strip().split()
+            mapping[AtomIdx(int(pair[0]))] = AtomIdx(int(pair[1]))
 
 # Reverse mapping.
 elif os.path.isfile("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num1, num0)):
     with open("%s/FESetup_mappings/merge_errors/%s_%s.txt" % (job_dir, num1, num0), "r") as file:
         for line in file:
-            data = line.strip().split()
+            pair = line.strip().split()
             # Invert the indices.
-            mapping[AtomIdx(int(data[1]))] = AtomIdx(int(data[0]))
+            mapping[AtomIdx(int(pair[1]))] = AtomIdx(int(pair[0]))
 
 # No mapping, generate it ourselves.
 else:
