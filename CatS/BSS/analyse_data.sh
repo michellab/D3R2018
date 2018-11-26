@@ -5,7 +5,7 @@ export SIRE_DONT_PHONEHOME=1
 export SIRE_SILENT_PHONEHOME=1
 
 # Create the name of the analysis command.
-cmd="/mnt/shared/software/sire.app/bin/analyse_freenrg mbar --subsampling --overlap -i "
+cmd="/mnt/shared/software/sire.app/bin/analyse_freenrg mbar --subsampling --overlap --percent 90 -i "
 
 # Remove old free energy data.
 if [ -f free_energies.txt ];
@@ -33,7 +33,7 @@ do
         # in order to see if the simulation has completed.
 
         # Generate the file name.
-        filename="$dir/free/lambda_1.0/gradients.dat"
+        filename="$dir/free/lambda_1.0000/gradients.dat"
 
         if [ -f "$filename" ];
         then
@@ -42,7 +42,7 @@ do
             step=0
         fi
 
-        if [ $step -eq 50 ];
+        if [ $step -eq 200 ];
         then
             echo "Running free energy analysis for ligand pair: $pair"
 
