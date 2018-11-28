@@ -37,7 +37,7 @@ export JOB_DIR=$SLURM_SUBMIT_DIR
 # Make sure GPU ID 0 is first.
 export CUDA_VISIBLE_DEVICES=0,1
 
-# Forward.
+# Forwards.
 time /mnt/shared/software/sire.app/bin/sire_python --ppn=1 $JOB_DIR/binding_freenrg.py LIG0 LIG1 &
 
 # Make sure GPU ID 1 is first.
