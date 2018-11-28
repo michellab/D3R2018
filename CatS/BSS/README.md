@@ -71,8 +71,10 @@ cd D3R2018/CatS/BSS
 
 Update the paths in `template.slm` and `analyse_data.sh` to match your
 software environment, i.e. the location of `Sire`, `AMBERHOME`, `GMRX`,
-etc. You'll also need to update the Slurm directives appropriately for
-your cluster.
+etc. You'll also need to update the Slurm directives appropriately for your
+cluster. The template is configured for a cluster with two GPUs per node, i.e.
+the forward and reverse mappings for a given ligand pair are run on a
+single node.
 
 ### Submit
 
