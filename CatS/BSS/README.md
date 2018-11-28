@@ -28,7 +28,7 @@ git checkout feature-mapping
 $HOME/sire.app/bin/conda install -c omnia/label/betacuda90 openmm
 ```
 
-3) Recompile Sire for updated OpenMM library
+### Recompile Sire for updated OpenMM library
 
 ```bash
 cd Sire
