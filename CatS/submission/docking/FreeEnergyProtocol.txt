@@ -1,24 +1,30 @@
 # Comment lines starting with hashtags will be ignored
 #
 # Your brief name for this protocol
-Name: 
+Name:Free Energies from Docking 
 #
 # All software packages used and their versions:
-Software:
-Protein Forcefield:
-Ligand Forcefield:
-Water Model:
+Software: Flare 2.0 revision 34140
+Software: fkcombu 
+Software: Rdkit 2018.09.01
+Protein Forcefield: Lead Finder
+Ligand Forcefield: Lead Finder
+Water Model: none
 #
 # List any number of key computational parameters in the following lines:
-Parameter: 
+Parameter: calculation method : normal
+Parameter: Quality : Normal
+Parameter: Max poses 10
+Parameter: Pool Size: 1.00
+Parameter: Population Size: 1.00
 #
-# Provide free text description of your method below. Use as many lines as you need. 
-# The level of detail should be about what you would write for a publication.  
-Method: 
+# Provide free text description of your method below. Use as many lines as you need.
+# The level of detail should be about what you would write for a publication. 
+Method: Ligands were read from file with Flare, minimised protonated to a pH of 4.5 and minimised with Flare. They were then docked to, 2HHN with only retaining one docking pose. The resulting ligand positions were saved and used to find the maximum common substructure between ligand and available crystal structures of GC3. Matched crystal structures were then used to aligned the docked compounds to the crystal compounds using fkcombu. Aligned structures with their respective crystals were then read back into Flare for a second round of docking calculations to pdb structure 5QC4. Top scoring poses were checked to see if binding mode was consistent with known crystal structures. Then the LF dG score was recorded and pose was saved.
 #
 # Yes/No questions:
 # Question 1: Did you use visual inspection to select, eliminate and/or manually adjust your final predicted poses?
 # Question 2: Did you use any machine learning methods to perform this calculation?
 #
-Answer 1: 
-Answer 2:
+Answer 1: yes
+Answer 2: no
