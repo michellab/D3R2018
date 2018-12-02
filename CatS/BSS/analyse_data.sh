@@ -82,3 +82,6 @@ done
 # Work out the free energy difference and append to the file.
 awk '{if (NR == 1) {print $0} else {printf("%s %12.4f %12.4f\n", $0, $3-$5, sqrt(($4*$4) + ($6*$6)))}}' free_energies.txt > tmp.txt
 mv tmp.txt free_energies.txt
+
+# Creat CSV file for network analysis code.
+awk 'NR>1{printf "CatS_%s,CatS_%s,%5.4f,%5.4f\n", $1,$2,$7,$8}' free_energies.txt > free_energies.csv
