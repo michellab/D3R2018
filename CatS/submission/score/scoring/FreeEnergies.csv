@@ -1,0 +1,45 @@
+# The following lines list the ligands and your predicted,,
+# binding free energies for them, in kcal/mol. ,
+# If you computed relative binding free energies, please reference,
+# your result to the first ligand in the list below.,,
+#,,
+#LigandID, Binding Free Energy (kcal/mol), Uncertainty (SEM in kcal/mol)
+CatS_4,-11.62,0.5
+CatS_9,-5.23,0.5
+CatS_29,-9.05,0.5
+CatS_30,-9.48,0.5
+CatS_52,-12.32,0.5
+CatS_76,-11.58,0.5
+CatS_79,-11.18,0.5
+CatS_84,-11.39,0.5
+CatS_122,-11.01,0.5
+CatS_127,-11.73,0.5
+CatS_130,-12.03,0.5
+CatS_131,-12.05,0.5
+CatS_132,-12.60,0.5
+CatS_139,-12.90,0.5
+CatS_141,-10.67,0.5
+CatS_142,-12.10,0.5
+CatS_144,-11.82,0.5
+CatS_153,-11.85,0.5
+CatS_155,-10.07,0.5
+CatS_157,-12.58,0.5
+CatS_160,-12.29,0.5
+CatS_162,-11.15,0.5
+CatS_165,-11.64,0.5
+CatS_167,-11.98,0.5
+CatS_172,-11.56,0.5
+CatS_174,-12.46,0.5
+CatS_176,-10.33,0.5
+CatS_177,-12.65,0.5
+CatS_178,-8.77,0.5
+CatS_180,-13.42,0.5
+CatS_181,-12.32,0.5
+CatS_184,-6.00,0.5
+CatS_185,-10.70,0.5
+CatS_186,-9.04,0.5
+CatS_191,-10.10,0.5
+CatS_195,-7.71,0.5
+CatS_252,-5.76,0.5
+CatS_253,-11.13,0.5
+CatS_255,-10.83,0.5
