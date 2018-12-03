@@ -1,0 +1,26 @@
+# Name for the protocol
+Name: Crystal Alignment
+#
+# All software packages used and their versions:
+Software: Flare 2.0 revision 34140
+Software: fkcombu 
+Software: RDkit 2018.09.01
+#
+# List of key parameters used for system preparation
+System Preparation Parameters: Assumed pH 4.5
+#
+# Plain-text description of system preparation method
+System Preparation Method: Ligands were read from smiles files with Flare, protonated to a pH of 4.5 and minimised with Flare. They were then docked to, 2HHN with only retaining one docking pose. The resulting ligand positions were saved. 
+#
+# List any number of key computational parameters in the following lines:
+Pose Prediction Parameters: default of fkcombu
+#
+# Provide free text description of your method below. Use as many lines as you need. 
+Pose Prediction Method: The preliminary docked ligands were used to find the maximum common substructure between ligand and available crystal structures of GC3. Ligands of GC4 were matched to GC3 crystals based on the largest MCS. Matched GC4 ligands were aligned to their crystal structure match using the crystal structure receptor as the reference protein.
+#
+# Yes/No questions:
+# Question 1: Did you use visual inspection to select, eliminate and/or manually adjust your final predicted poses?
+# Question 2: Did you use publicly available co-crystal structures of this protein with similar ligands to guide your pose predictions?
+#
+Answer 1: no
+Answer 2: Yes
