@@ -9,6 +9,9 @@ Sire (feature-mapping) https://github.com/michellab/Sire/tree/feature-mapping
 AmberTools (18)
 GROMACS (2018)
 
+Full installation instructions:
+https://github.com/michellab/D3R2018/blob/master/CatS/BSS/README.md
+
 Protein Forcefield: AMBER FF14SB
 Ligand Forcefield: AMBER GAFF2
 Water Model: TIP3P
