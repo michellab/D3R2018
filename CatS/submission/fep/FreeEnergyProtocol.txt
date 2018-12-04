@@ -21,6 +21,9 @@ Parameter:
 # Provide free text description of your method below. Use as many lines as you need.
 # The level of detail should be about what you would write for a publication.
 Method:
+Full installation instructions:
+https://github.com/michellab/D3R2018/blob/master/CatS/BSS/README.md
+
 The ligands were prepared for relative free energy calculations from the output
 of the docking protocols. Each ligand was parameterised using GAFF within
 BioSimSpace using the following script:
