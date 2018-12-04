@@ -1,0 +1,28 @@
+# Comment lines starting with hashtags will be ignored
+#
+# Your brief name for this protocol
+Name: Scoring with Flare
+#
+# All software packages used and their versions, one per line
+Software: Flare 2.0 revision 34140
+#
+# List any number of key computational parameters, one per line
+Parameters: Quality Extra Precision
+Parameters: Max Poses 3
+Parameters: Pool Size 1
+Parameters: Population Size 1
+Parameters: Minimize Ligands before docking
+Parameters: Rotate amide bonds
+Parameters: Rotate ester Bonds
+Parameters: Rotate Conjugate bonds heuristically decide
+#
+# Provide free text description of your method below. Use as many lines as you need. 
+Method:
+BACE-1 and all ligands were loaded into Flare. A docking grid based on the ligand of BACE-1 was retained. All crystal waters were kept in the docking box. The docking calculation was started with above parameters. The scoring was done based on the Lead Finder Virtual screen score and written to file. Ranking and energies were taken from the poses with the lowest LF VSscore.
+#
+# Yes/No questions:
+# Question 1: Did you use visual inspection to select, eliminate and/or manually adjust your final predicted poses?
+# Question 2: Did you use any machine learning methods to perform this calculation?
+#
+Answer 1: no
+Answer 2: no
