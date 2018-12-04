@@ -3,12 +3,14 @@
 Name: Alchemical free energies using BioSimSpace.
 #
 # All software packages used and their versions:
-Software:
-BioSimSpace (feature-freenrgy) https://github.com/michellab/BioSimSpace/tree/feature-freenrg
-Sire (feature-mapping) https://github.com/michellab/Sire/tree/feature-mapping
-AmberTools (18)
-GROMACS (2018)
-
+Software: BioSimSpace (feature-freenrgy) https://github.com/michellab/BioSimSpace/tree/feature-freenrg
+Software: Sire (feature-mapping) https://github.com/michellab/Sire/tree/feature-mapping
+Software: AmberTools (18)
+Software: GROMACS (2018)
+Software: pymbar (3.0.1.dev-bf5e96b)
+Software: freenrgworkflows (1.1)
+Software: FESetup 1.2.1, SUI version: 0.8.3 
+Software: RDkit 18.09.01
 Protein Forcefield: AMBER FF14SB
 Ligand Forcefield: AMBER GAFF2
 Water Model: TIP3P
