@@ -16,7 +16,14 @@ Ligand Forcefield: AMBER GAFF2
 Water Model: TIP3P
 #
 # List any number of key computational parameters in the following lines:
-Parameter:
+Parameter: timestep 2.00 femtosecond
+Parameter: temperature = 300.00 kelvin
+Parameter: pressure = 1 atm
+Parameter: reaction field dielectric = 78.3
+Parameter: cutoff type = cutoffperiodic
+Parameter: cutoff distance = 10 angstrom
+Parameter: minimise = True
+Parameter: lambda values between 9 and 17 windows. 
 #
 # Provide free text description of your method below. Use as many lines as you need.
 # The level of detail should be about what you would write for a publication.
