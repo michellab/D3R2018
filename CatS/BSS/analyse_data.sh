@@ -48,13 +48,13 @@ do
             echo "Running free energy analysis for ligand pair: $pair"
 
             # Don't re-run analysis if already done.
-            if [ ! -f ${pair}_mbar_bound.txt ];
+            if [ ! -f ${dir}_mbar_bound.txt ];
             then
                 $cmd $dir/bound/*/simfile.dat -o ${dir}_mbar_bound.txt > /dev/null 2>&1
             fi
 
             # Don't re-run analysis if already done.
-            if [ ! -f ${pair}_mbar_free.txt ];
+            if [ ! -f ${dir}_mbar_free.txt ];
             then
                 $cmd $dir/free/*/simfile.dat -o ${dir}_mbar_free.txt > /dev/null 2>&1
             fi
