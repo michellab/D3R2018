@@ -14,11 +14,11 @@ Parameters: Population Size 1
 Parameters: Minimize Ligands before docking
 Parameters: Rotate amide bonds
 Parameters: Rotate ester Bonds
-Parameters: Roate Conjugate bonds heuristically decide
+Parameters: Rotate Conjugate bonds heuristically decide
 #
 # Provide free text description of your method below. Use as many lines as you need. 
 Method:
-5QC1 and all ligands were laoded into flare. A docking grid based on the ligand of 5QC1 was retained. All crystal waters were kept in the docking box. The docking calulcation was started with above parameters. The scoring was done based on the Lead Finder Virtual screen score and written to file. Ranking and energies were taken from the poses with the lowest LF VSscore.
+5QC1 and all ligands were loaded into Flare. A docking grid based on the ligand of 5QC1 was retained. All crystal waters were kept in the docking box. The docking calculation was started with above parameters. The scoring was done based on the Lead Finder Virtual screen score and written to file. Ranking and energies were taken from the poses with the lowest LF VSscore.
 #
 # Yes/No questions:
 # Question 1: Did you use visual inspection to select, eliminate and/or manually adjust your final predicted poses?
