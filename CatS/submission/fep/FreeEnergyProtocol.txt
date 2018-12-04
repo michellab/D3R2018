@@ -7,9 +7,9 @@ Software: BioSimSpace (feature-freenrgy) https://github.com/michellab/BioSimSpac
 Software: Sire (feature-mapping) https://github.com/michellab/Sire/tree/feature-mapping
 Software: AmberTools (18)
 Software: GROMACS (2018)
-Software: pymbar (3.0.1.dev-bf5e96b)
+Software: pymbar (3.0.3)
 Software: freenrgworkflows (1.1)
-Software: FESetup 1.2.1, SUI version: 0.8.3 
+Software: FESetup 1.2.1, SUI version: 0.8.3
 Software: RDkit 18.09.01
 Protein Forcefield: AMBER FF14SB
 Ligand Forcefield: AMBER GAFF2
@@ -70,7 +70,10 @@ This performed the following sequence of tasks:
     specific windows as necessary.
 
 The full set of simulations were run on a 10 node GPU cluster with 2
-GPUs per node. A single job submission involved running the full forward
+GPUs per node. This ran on the Oracle Cloud infrastructure and was set up
+using the following guide:
+https://cluster-in-the-cloud.readthedocs.io/en/latest/running.html#slurm-jobs
+A single job submission involved running the full forward
 and reverse mappings on the two GPUs within a node. A Slurm template and
 the bash script used for submission can be found at the following links:
 https://github.com/michellab/D3R2018/blob/master/CatS/BSS/template.slm
