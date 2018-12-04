@@ -1,3 +1,13 @@
+# The first non-comment line of this file must specify whether you ,,
+# are provided energies (in kcal/mol), or a more arbitrary docking score. ,
+# The options are Type: energy and Type: score,,
+#,,
+Type: energy,,
+#,,
+# The subsequent lines list the ligands, your predicted ranking of the ligands,
+# and computed energy or score which led to this ranking.,,
+#,,
+#LigandID, Rank, Energy/Score
 CatS_1,145,-11.047
 CatS_2,36,-13.077
 CatS_3,101,-11.783
