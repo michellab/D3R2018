@@ -50,18 +50,18 @@ do
             # Don't re-run analysis if already done.
             if [ ! -f ${pair}_mbar_bound.txt ];
             then
-                $cmd $dir/bound/*/simfile.dat -o ${pair}_mbar_bound.txt > /dev/null 2>&1
+                $cmd $dir/bound/*/simfile.dat -o ${dir}_mbar_bound.txt > /dev/null 2>&1
             fi
 
             # Don't re-run analysis if already done.
             if [ ! -f ${pair}_mbar_free.txt ];
             then
-                $cmd $dir/free/*/simfile.dat -o ${pair}_mbar_free.txt > /dev/null 2>&1
+                $cmd $dir/free/*/simfile.dat -o ${dir}_mbar_free.txt > /dev/null 2>&1
             fi
 
             # Extract bound and free leg free energies.
-            pmf_bound=$(awk '/MBAR free/{getline; gsub(",", "", $0); print $1, $2}' ${pair}_mbar_bound.txt)
-            pmf_free=$(awk '/MBAR free/{getline; gsub(",", "", $0); print $1, $2}' ${pair}_mbar_free.txt)
+            pmf_bound=$(awk '/MBAR free/{getline; gsub(",", "", $0); print $1, $2}' ${dir}_mbar_bound.txt)
+            pmf_free=$(awk '/MBAR free/{getline; gsub(",", "", $0); print $1, $2}' ${dir}_mbar_free.txt)
 
             # Only proceed if there is valid free energy data.
             if [ "$pmf_bound" != "" ] && [ "$pmf_free" != "" ];
