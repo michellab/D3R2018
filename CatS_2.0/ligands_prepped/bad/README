@@ -1,0 +1,2 @@
+These ligands are ones directly written with Flare, without minimising bond lengths. They work fine with FESetup, but not with BSS.
+BSS does not wirte a connect record and is therefore unhappy with these ligands. 
