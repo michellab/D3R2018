@@ -1,11 +1,12 @@
 #!/bin/bash -login
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=1
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=14
 #SBATCH --job-name=NAME
 #SBATCH --output=NAME.out
 #SBATCH --time=100:00:00
 #SBATCH --mem=40G
-#SBATCH --exclusive
 
 # Disable Sire analytics.
 export SIRE_DONT_PHONEHOME=1
