@@ -73,14 +73,14 @@ minimised = BSS.Process.Gromacs(solvated, BSS.Protocol.Minimisation()) \
                .start().getSystem()
 
 # Equilibrate the system.
-equilibrated = BSS.Process.Gromacs(solvated, BSS.Protocol.Equilibration()) \
+equilibrated = BSS.Process.Gromacs(minimised, BSS.Protocol.Equilibration()) \
                   .start().getSystem()
 
 # Create the free energy protocol.
-protocol = BSS.Protocol.FreeEnergy(runtime=4*BSS.Units.Time.nanosecond, num_lam=17)
+protocol = BSS.Protocol.FreeEnergy(timestep=1*BSS.Units.Time.femtosecond, runtime=4*BSS.Units.Time.nanosecond, num_lam=17)
 
 # Initialise the binding free energy object.
-freenrg = BSS.FreeEnergy.Binding(solvated, protocol, work_dir="CatS_%s_%s" % (num0, num1))
+freenrg = BSS.FreeEnergy.Binding(equilibrated, protocol, work_dir="CatS_%s_%s" % (num0, num1))
 
 # Run the simulation.
 freenrg.run()
