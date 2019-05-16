@@ -1,0 +1,48 @@
+#!/bin/bash -login
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --job-name=NAME
+#SBATCH --output=NAME.out
+#SBATCH --time=7-00:00:00
+#SBATCH -p gpu
+#SBATCH --gres=gpu:2
+#SBATCH --gres-flags=enforce-binding
+
+# Disable Sire analytics.
+export SIRE_DONT_PHONEHOME=1
+export SIRE_SILENT_PHONEHOME=1
+
+# Make sure nvcc is in the path.
+export PATH=/usr/local/cuda-9.2/bin:$PATH
+
+# Set path to local AmberTools installation.
+#export AMBERHOME=/mnt/shared/software/amber18
+
+# Source the GROMACS shell rc, making sure mount point exists.
+#while [ ! -f /mnt/shared/software/gromacs/bin/GMXRC ]; do
+#    sleep 1s
+#done
+#source /mnt/shared/software/gromacs/bin/GMXRC
+
+# Set the OpenMM plugin directory.
+export OPENMM_PLUGIN_DIR=/export/users/ppxasjsm/biosimspace.app/lib/plugins
+
+# Make a unique directory for this job and move to it.
+mkdir $SLURM_SUBMIT_DIR/$SLURM_JOB_ID
+cd $SLURM_SUBMIT_DIR/$SLURM_JOB_ID
+
+export JOB_DIR=$SLURM_SUBMIT_DIR
+
+# Run the script using the BioSimSpace python interpreter.
+
+# Make sure GPU ID 0 is first.
+
+# Forwards.
+time /export/users/ppxasjsm/biosimspace.app/bin/sire_python --ppn=8 $JOB_DIR/binding_freenrg_somd.py LIG0 LIG1 &
+
+# Make sure GPU ID 1 is first.
+export CUDA_VISIBLE_DEVICES=1,0
+
+# Backwards.
+time /export/users/ppxasjsm/biosimspace.app/bin/sire_python --ppn=8 $JOB_DIR/binding_freenrg_somd.py LIG1 LIG0
+wait
