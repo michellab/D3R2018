@@ -9,17 +9,18 @@ with open("ligands.txt", "r") as file:
     for line in file:
         ligands.append(line.rstrip())
 
+print(ligands)
 # Get the ligand index.
 idx = int(sys.argv[1])
-
+print(ligands[idx])
 # Extract the ligand name.
-lig_name = re.search("(CatS_\d+).mol2", ligands[idx]).groups()[0]
+lig_name = "CatS_"+ligands[idx]
 
 # Create the prefix of the output files.
 output = "parameterised/" + lig_name
 
 # Load the ligand.
-lig = BSS.IO.readMolecules(ligands[idx]).getMolecules()[0]
+lig = BSS.IO.readMolecules(lig_name+'.mol2').getMolecules()[0]
 
 # Parameterise the ligand with GAFF2.
 lig = BSS.Parameters.gaff2(lig).getMolecule()
