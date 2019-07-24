@@ -23,7 +23,7 @@ output = "parameterised/" + lig_name
 lig = BSS.IO.readMolecules(lig_name+'.mol2').getMolecules()[0]
 
 # Parameterise the ligand with GAFF2.
-lig = BSS.Parameters.gaff2(lig).getMolecule()
+lig = BSS.Parameters.gaff2(lig, work_dir='tmp_'+str(idx)).getMolecule()
 
 # Save to AMBER format.
 BSS.IO.saveMolecules(output, lig, ["rst7", "prm7"])
